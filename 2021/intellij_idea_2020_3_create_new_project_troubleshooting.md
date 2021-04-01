@@ -13,6 +13,7 @@ Non-Bundled Plugins: org.jetbrains.kotlin
 记录一下，创建Kotlin JVM新项目，在构建系统(Build System)选择`Gradle Kotlin` 和 `Gradle Groovy`时，都直接进入创建成功的页面，但gradle sync failed；我感觉应该是Gradle下载不下来 —— 导致有`main()`方法却不能运行，项目为构建成功时，那个运行的图案/标都没有；
 
 那我是怎么盘活的呢？
+
 1. 由于本机安装了Gradle，于是在命令行(terminal)各种一通操作；
 
 ```bash
@@ -31,5 +32,7 @@ gradle clean
 总之简单记录下
 
 refs：
+
 [1. Tutorial: Create your first Kotlin application](https://www.jetbrains.com/help/idea/create-your-first-kotlin-app.html)
+
 [2. Creating a New Project in IntelliJ IDEA](https://blog.jetbrains.com/idea/2021/01/creating-a-new-project-in-intellij-idea/)

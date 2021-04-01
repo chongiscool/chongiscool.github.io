@@ -1,6 +1,7 @@
 
 
 1. 声明需要相机支持
+
 ```xml
 <manifest ... >
     <uses-feature android:name="android.hardware.camera"
@@ -37,10 +38,13 @@ protected void onActivityResult(int requestCode, int resultCode, Intent data) {
     }
 }
 ```
+
 **注意**：官方文档说，`data`参数获取到的数据，用于作为icon显示比较好。毕竟是缩略图嘛。
 
 4. 保存刚刚拍的照片
+
 申请权限先；
+
 ```xml
 <manifest ...>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -182,6 +186,6 @@ private void galleryAddPic() {
 
 参考：
 
-[1. Camera | takephotos](https://developer.android.com/training/camera/photobasics)
+[1. Camera#takephotos](https://developer.android.com/training/camera/photobasics)
 
 [2. FileProvider#SpecifyFiles](https://developer.android.com/reference/android/support/v4/content/FileProvider#SpecifyFiles)
